@@ -46,7 +46,5 @@
             android:name=".OverlayService"
             android:exported="false" />
 
-        <!-- 悬浮窗权限声明 (Android 10+) -->
-        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     </application>
 </manifest>
