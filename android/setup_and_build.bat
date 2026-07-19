@@ -24,11 +24,7 @@ if not exist "%GRADLE_HOME%\wrapper\dists\gradle-8.5-*" (
     echo [*] 首次运行需要下载 Gradle (自动)
 )
 
-:: 创建 wrapper (如果没有)
-if not exist "gradlew.bat" (
-    echo [*] 生成 Gradle wrapper...
-    gradle wrapper --gradle-version 8.5
-)
+:: gradlew / gradlew.bat 已是自包含版本, 无需额外 wrapper 生成
 
 :: 设置 ANDROID_HOME
 if "%ANDROID_HOME%"=="" (
