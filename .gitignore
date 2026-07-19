@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+config.json
+*.onnx
+*.exe
+*.nnue
+debug/
+templates/
+VinXiangQi/
+VinXiangQi.v1.4.0/
+*.zip

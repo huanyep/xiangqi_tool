@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">象棋辅助</string>
+    <string name="server_ip_label">电脑 IP 地址</string>
+    <string name="server_port_label">端口</string>
+    <string name="btn_start">启动截屏</string>
+    <string name="btn_stop">停止</string>
+    <string name="overlay_hint">象棋辅助运行中</string>
+</resources>

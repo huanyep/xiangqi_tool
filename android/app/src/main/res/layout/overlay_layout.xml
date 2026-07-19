@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- 卡片背景 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/overlay_bg"
+        android:padding="12dp"
+        android:elevation="8dp">
+
+        <!-- 标题行 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp">
+
+            <TextView
+                android:id="@+id/overlay_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="#4FC3F7"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/overlay_close"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/overlay_move"
+                android:tint="#888888"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <!-- 评分 -->
+        <TextView
+            android:id="@+id/overlay_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#888888"
+            android:textSize="11sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- 提示 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="象棋辅助运行中"
+            android:textColor="#555555"
+            android:textSize="9sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</FrameLayout>
