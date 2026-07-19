@@ -28,7 +28,8 @@ if [ ! -f "$PROPS" ]; then
 fi
 
 # Parse distribution URL from properties
-DIST_URL=$( grep "^distributionUrl" "$PROPS" | head -1 | sed 's/.*=//' | tr -d '[:space:]' )
+# NOTE: Gradle properties files use \: to escape colons — strip the backslash for the real URL
+DIST_URL=$( grep "^distributionUrl" "$PROPS" | head -1 | sed 's/.*=//' | tr -d '[:space:]' | sed 's/\\:/:/g' )
 if [ -z "$DIST_URL" ]; then
     echo "ERROR: distributionUrl not found in $PROPS" >&2
     exit 1
